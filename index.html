@@ -11,13 +11,13 @@
   <p id="description">This is a survey where you tell us about your best music</p>
   <form id="survey-form">
 
-<label id="name">Name</label>
+<label id="name-label">Name</label>
 <input type="text" name="name" id="name" required placeholder="First Name"></input><br>
 
-<label id="email">Email</label>
+<label id="email-label">Email</label>
 <input type="text" name="email" id="email" required placeholder="Email"></input><br>
 
-<label id="number">Number</label>
+<label id="number-label">Number</label>
 <input type="text" name="number" id="number" min="1" max="125" class="field" required placeholder="Number"></input><br>
 
 <div>
@@ -37,27 +37,7 @@
   </div>
 </div>
 div>
-      <div class="labels">
-        <label id="name-label" for="name">Name: </label>
-      </div>
-      <div class="entry">
-        <input autofocus type="text" name="name" id="name" class="field" placeholder="Enter your name" required>
-      </div>
-    </div>
-    <div>
-      <div class="labels">
-        <label id="email-label" for="email">Email: </label>
-      </div>
-      <div class="entry">
-              <input type="email" name="email" id="email" class="field" required placeholder="Enter your Email">
-            </div>
-            <div class="labels">
-            <label id="number-label" for="number">Number: </label>
-          </div>
-          <div class="entry">
-            <input type="number" name="number" id="number" min="1" max="125" class="field" placeholder="number">
-          </div>
-        </div>
+      
 <!-- Radio options start -->
 <div>
   <div class="labels">
@@ -73,10 +53,11 @@ div>
 </div>
 <!-- end of radio -->
 
+<textarea placeholder="Additional comment"></textarea>
+<input type="submit"  id = "submit">
 
+</form>
 
-
-  </form>
 
 </body>
 </html>
