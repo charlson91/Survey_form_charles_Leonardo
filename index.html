@@ -7,10 +7,10 @@
     <title>Survey form</title>
 </head>
 <body>
-  <h1 id="title">Tell me about a music</h1> 
-  <p id="description">This is a survey where you tell us about your best music</p> 
+  <h1 id="title">Tell me about a music</h1>
+  <p id="description">This is a survey where you tell us about your best music</p>
   <form id="survey-form">
-      
+
 <label id="name">Name</label>
 <input type="text" name="name" id="name" required placeholder="First Name"></input><br>
 
@@ -18,7 +18,63 @@
 <input type="text" name="email" id="email" required placeholder="Email"></input><br>
 
 <label id="number">Number</label>
-<input type="text" name="number" id="number" required placeholder="Number"></input><br>
+<input type="text" name="number" id="number" min="1" max="125" class="field" required placeholder="Number"></input><br>
+
+<div>
+  <div class="labels">
+    <label for="situation">Choose what kind of music do you like: </label>
+  </div>
+  <div class="entry">
+    <select id="dropdown" name="situation" class="dropdown">
+  <option disabled value>Select an option</option>
+  <option  value="student">Rock</option>
+  <option value="job">R&B</option>
+  <option value="learner">Kpop</option>
+  <option value="notSay">Prefer not to say</option>
+  <option value="other">Classical</option>
+  <option value="other2">Eclethical</option>
+</select>
+  </div>
+</div>
+div>
+      <div class="labels">
+        <label id="name-label" for="name">Name: </label>
+      </div>
+      <div class="entry">
+        <input autofocus type="text" name="name" id="name" class="field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div>
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="entry">
+              <input type="email" name="email" id="email" class="field" required placeholder="Enter your Email">
+            </div>
+            <div class="labels">
+            <label id="number-label" for="number">Number: </label>
+          </div>
+          <div class="entry">
+            <input type="number" name="number" id="number" min="1" max="125" class="field" placeholder="number">
+          </div>
+        </div>
+<!-- Radio options start -->
+<div>
+  <div class="labels">
+    <label for="recommend">How likely is that you would recommend your music taste to a friend?</label>
+  </div>
+  <div class="entry">
+    <ul style="list-style: none;">
+      <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="recommend" ></label></li>
+      <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="recommend" ></label></li>
+      <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="recommend" ></label></li>
+    </ul>
+  </div>
+</div>
+<!-- end of radio -->
+
+
+
 
   </form>
 
